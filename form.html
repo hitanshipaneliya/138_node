@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    form{
+        text-align: center;
+        /* height: 800px; */
+        margin-top: 150px;
+    }
+    h1{
+        color: blue;
+        font-size: 40px;
+    }
+    table{
+        /* width: 800px; */
+        margin-left: 700px;
+    }
+    #name{
+        width: 250px;
+        height: 30px;
+    }
+    #btn{
+        border-radius: 6px;
+        /* border: 2px; */
+        margin-top: 10px;
+        width: 200px;
+        height: 35px;
+        font-size: 20px;
+        background-color:green;
+    }
+</style>
+<body>
+<form>
+    <table  border="5">
+        <h1>Facebook</h1>
+        <tr>
+            <h2>Create a new Account</h2>
+            <td>First Name</td>
+            <td colspan="3"><input type="text" name="name" id="name"></td>
+            <!-- <td><input type="text" name="name" id="name"></td> -->
+
+        </tr>
+        <tr>
+            <td>SurName</td>
+            <td colspan="3"><input type="text" name="name" id="name"></td>
+        </tr>
+        <tr>
+            <td>Mobile Number or email address</td>
+            <td colspan="3"><input type="text" name="mno" id="name"></td>
+        </tr>
+        <tr>
+            <td>New Password</td>
+            <td colspan="3"><input type="password" name="pass" id="name"></td>
+        </tr>
+        <tr>
+            <td>Date of birth</td>
+            <td colspan="3"><input type="date" name="date" id="name"></td>
+        </tr>
+        <tr>
+            <td id="name">Gender</td>
+            <td><input type="radio" name="gender" id="gender">Male</td>
+            <td><input type="radio" name="gender" id="gender">Female</td>
+            <td><input type="radio" name="gender" id="gender">Custom</td>
+        </tr>
+        <tr >
+            <!-- <td colspan="2"></td> -->
+            <td colspan="4"><input type="button"id="btn" value="Sign Up"></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
