@@ -20,6 +20,8 @@
 // console.log(0.2+0.1==0.3);
 // console.log(0.1+0.2==0.3);
 // console.log(0.1+0.3==0.4);
+// console.log(0.1+0.4==0.5);
+// console.log(0.2+0.4==0.6);
 
 
 // console.log(typeof "skill");
@@ -57,7 +59,7 @@ console.log(NaN===null)
 var a=10;
 {
     var a=100;
-}                                           //100
+}                                          //100 
 console.log(a)
 
 
@@ -65,4 +67,5 @@ let a=10;
 console.log(a);
 let a=20;
 console.log(a);                               //error
+
 

@@ -1,9 +1,10 @@
 // let arr=[10,11,12,13,14,15,16,17,18,19,20];
-
+// console.log(arr["8"]);
+// console.log(arr[3.1]);
 
 // console.log(typeof arr);
 // console.log(arr.length);
-// // arr.length=10;
+// arr.length=10;
 // arr[9]=undefined;
 // console.log(arr);
 
@@ -20,6 +21,7 @@
 // arr.length=100;
 // console.log(arr);
 // arr[50]=50;
+// console.log(arr);
 
 
 // let arr_new=[10,20,30,40,50,60,70,80];
@@ -40,7 +42,7 @@
 // console.log(arr_new);    [ 60, 20, 30, 40, 50 ]
 
 
-// arr_new.splice(5,1); [10, 20, 30, 40,50, 70, 80]
+// arr_new.splice(5,1); [10, 20, 30, 40, 50, 70, 80]
 
 // arr_new.splice(-4,2);  [ 10, 20, 30, 40, 70, 80 ]
 // arr_new.splice(-4,-2);    [10, 20, 30, 40,50, 60, 70, 80]
