@@ -1,22 +1,38 @@
-// const express=require("express");
-// const app=express();
-// const PORT=5050;
+const fs=require("fs")
 
-// app.get("/",(req,res)=>{
-//     res.json({msg:"hello"});
-//     console.log("connected");
-// }); 
-
-// app.get("/login",(req,res)=>{
-//     res.json({msg:"login"});
-//     console.log("connected");
+// fs.readFile("file1.txt","utf8",(err,data)=>{
+//     if(err) console.log(err)
+//     else console.log(data)
 // });
 
-// app.post("/login",(req,res)=>{
-//     res.json({msg:"login post"});
-//     console.log("connected");
+// let content="having fun......";
+// fs.writeFile("file1.txt",content,"utf8",(err)=>{
+//     if(err) console.log(err);
+//     else console.log("file writing done...");
 // });
-// app.listen(PORT,()=>{
-//     console.log(`server listening post${PORT}`);
-// })
 
+fs.copyFile("file1.txt", "file_copy.txt", (err) => {
+    if (err) {
+      console.log("Error Found:", err);
+    }
+});
+
+// data=fs.readFileSync("file1.txt","utf8")
+// console.log(data)
+
+// let content1="having some activity..."
+// fs.writeFileSync("file1.txt",content,"utf8");
+
+// fs.rename("file1.txt","file12.txt",(err)=>{
+//     if(err) console.log(err)
+//     else console.log()
+// });
+
+// fs.unlink("file12.txt",(err)=>{
+//     if(err) console.log(err)
+//     else console.log()
+// });
+
+// fs.state("file1.tst",(err,data)=>{
+//     console.log(data)
+// });
