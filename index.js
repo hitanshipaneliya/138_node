@@ -1,18 +1,33 @@
 const express=require("express");
-const app=express();
-const PORT=5050;
-app.use(express.json());
-app.use(express.urlencoded());
+// const app=express();
+// const PORT=5050;
+index=express.Router();
+index.use(express.json());
+index.use(express.urlencoded());
 
-app.get("/login",(req,res)=>{
+index.get("/",(req,res)=>{
     res.sendFile(__dirname+"/index.html");
 });
 
-app.post("/login",(req,res)=>{
+index.post("/",(req,res)=>{
     const request=req.body;
-    console.log("data",request);
+    let username=request.username;
+    let password=request.password;
+
+    if(username==password){
+        res.json({"msg":"inside post login"});
+        console.log(request);
+        console.log(username);
+        console.log(password)
+    }
+    else{
+        res.json({"msg":"error"});
+    }
+    console.log("data",req.body);
 });
 
-app.listen(PORT,()=>{
-    console.log(`server listning is ${PORT}`);
-});
+// index.listen(PORT,()=>{
+//     console.log(`server listning is ${PORT}`);
+// });
+
+module.exports=index;
