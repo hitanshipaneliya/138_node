@@ -1,5 +1,5 @@
 {
-  "name": "mongd_crud",
+  "name": "jwtsimple",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -11,9 +11,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "cors": "^2.8.5",
     "express": "^4.18.2",
     "jsonwebtoken": "^9.0.0",
-    "mongodb": "^4.13.0"
+    "jwt-simple": "^0.5.6"
   }
 }
