@@ -1,21 +1,23 @@
-const express=require("express");
+const express=require("express")
 const app=express();
-const port=5050;
-app.use(express.json());
-app.use(express.urlencoded());
+const port=5500;
+app.use(express.json())
 
-app.get("/",(req,res)=>{
-    res.json({"msg":"hello"})
-});
+const getData=require("./getData/getData");
+app.use("/getData",getData)
 
 
-// const login=require("./login")
-// app.use("/login",login);
+const postdata=require("./postData/postdata");
+app.use("/postdata",postdata)
 
 
-const index=require("./index")
-app.use("/index",index);
+const putdata=require("./putData/putdata");
+app.use("/putdata",putdata)
+
+
+const deletedata=require("./DeleteData/deletedata");
+app.use("/deletedata",deletedata)
 
 app.listen(port,()=>{
-    console.log(`server listing ${port}`);
+    console.log(`server listning ${port}`);
 })
